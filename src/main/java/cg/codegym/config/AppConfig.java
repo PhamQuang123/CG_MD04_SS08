@@ -59,6 +59,8 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         viewResolver.setCharacterEncoding("utf-8");
         return viewResolver;
     }
+
+    // cau hinh su dung file.properties trong resouces
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
